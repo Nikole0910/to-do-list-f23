@@ -28,4 +28,4 @@ Marco De Luca
 
 ## License
 
-MIT - please see license file.
+MIT - please see [license file](LICENSE).
