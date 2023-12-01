@@ -8,11 +8,13 @@
 }
 
 body {
-    background-color: black;
+    background-image: url("/images/colors_bg.jpg");
+    background-size: cover;
+
     /* These properties will be inhertied by the children elements */
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
 main {
@@ -24,24 +26,26 @@ main {
 header > h1 {
     text-align: center;
     padding: 10px;
+    color:black;
 }
 
 /* applies to all articles */
 article {
     width: 400px;
     border: 4px solid white;
+    background-color: rgb(167, 167, 167);
     border-radius: 8px;
     margin: 10px;
     text-align: left;
 }
 
 article h2 {
-    color: gray;
+    color: rgb(211, 252, 32);
    padding: 4px 8px;  /* top and bottom left and right */
 }
 
 article:first-of-type {
-    border: 4px solid gray;
+    border: 4px solid rgb(204, 216, 94);
 }
 
 /* This id has a higher specifity so it beats out the article selector */
@@ -50,15 +54,15 @@ article:first-of-type {
 }
 
 #inprogress h2 {
-    color: red;
+    color: rgb(255, 42, 42);
 }
 
 #done {
-    border: 4px solid green;
+    border: 4px solid rgb(27, 173, 179);
 }
 
 #done h2 {
-    color: green;
+    color: #52ceff;
 }
 
 ul {
@@ -71,7 +75,7 @@ ul li {
 }
 
 .todo li:nth-child(odd) {
-    background-color: rgba(255, 255, 255, .2)
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 .inprogress li:nth-child(odd) {
@@ -79,5 +83,60 @@ ul li {
 }
 
 .done li:nth-child(odd) {
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 204, 255, 0.5);
+}
+
+#first:checked+label {
+    color: rgb(54, 42, 165);
+}
+
+#second:checked+label {
+    color: rgb(54, 42, 165);
+}
+
+#third:checked+label {
+    color: rgb(54, 42, 165);
+}
+
+#fourth:checked+label {
+    color: rgb(54, 42, 165);
+}
+
+#fifth:checked+label {
+    color: rgb(54, 42, 165);
+}
+
+#sixth:checked+label {
+    color: rgb(54, 42, 165);
+}
+
+
+#one:checked+label::after {
+    color: rgb(8, 115, 120);
+    content:url(/images/Thumbs-Up.png);
+}
+
+#two:checked+label::after {
+    color: rgb(8, 115, 120);
+    content:url(/images/Thumbs-Up.png);
+}
+
+#three:checked+label::after {
+    color: rgb(8, 115, 120);
+    content:url(/images/Thumbs-Up.png);
+}
+
+#four:checked+label::after {
+    color: rgb(8, 115, 120);
+    content:url(/images/Thumbs-Up.png);
+}
+
+#five:checked+label::after {
+    color: rgb(8, 115, 120);
+    content:url(/images/Thumbs-Up.png);
+}
+
+#six:checked+label::after {
+    color: rgb(8, 115, 120);
+    content:url(/images/Thumbs-Up.png);
 }
